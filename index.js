@@ -122,7 +122,19 @@ module.exports = {
 			"error",
 			"unix"
 		],
-		"lines-around-comment": "error",
+		"lines-around-comment": [
+			"error",
+			{
+				"allowBlockStart": true,
+				"allowBlockEnd": true,
+				"allowObjectStart": true,
+				"allowObjectEnd": true,
+				"allowArrayStart": true,
+				"allowArrayEnd": true,
+				"allowClassStart": true,
+				"allowClassEnd": true
+			}
+		],
 		"lines-between-class-members": "error",
 		"max-depth": "off",
 		"max-len": "off",
