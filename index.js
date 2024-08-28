@@ -312,7 +312,14 @@ module.exports = {
 			"error",
 			"as-needed"
 		],
-		"quotes": "off",
+		"quotes": [
+			"error",
+			"single",
+			{
+				"avoidEscape": true,
+				"allowTemplateLiterals": true
+			}
+		],
 		"radix": [
 			"error",
 			"as-needed"
